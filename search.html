@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="index">
+    <header class="header">
+        <a href="index.html" class="company-logo">
+            <img src="media/logo.png" style="width: 170px;">
+            <b><span class="company-name">FlightPool</span>
+        </a>
+        <a href="index.html#promo-title" class="header-links">Акции</a>
+        <a href="index.html#search" class="header-links">Поиск</a>
+        <a href="register.html" class="header-links">Личный кабинет</a></b>
+    </header>
+    <center>
+    <form id="search-1">
+        <div class="bilet-search">
+            <table>
+                <tr>
+                    <td rowspan="2">
+                        <b class="bilet-poisk">Поиск билетов</b>
+                    </td>
+                    <td>
+                        Откуда 
+                    </td>
+                    <td>
+                        Куда 
+                    </td>
+                    <td>
+                        Дата вылета туда 
+                    </td>
+                    <td>
+                        Дата вылета обратно 
+                    </td>
+                    <td>
+                        Количество человек 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="город или аэропорт отправления" size="30" required="required">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="город или аэропорт назначения" size="30" required="required">
+                    </td>
+                    <td>
+                        <input type="date" required="required">
+                    </td>
+                    <td>
+                        <input type="date" required="required">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="от 1 до 8 включительно" size="30" required="required">
+                    </td>
+                    <td>
+                        <button class="bilet-search-button" type="submit">Искать</button>
+                        <button class="bilet-search-button-sbros" type="reset">Сброс</button>
+                    </td>
+                </tr>                  
+            </table>
+        </div> 
+    </form>
+    </center>
+    <h2 class="search-bilet-title">Это все доступные авиабилеты на данный момент</h2>
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">19:10</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">12 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 1ч 20м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">20:30</span>
+                <span class="bilet-gorod">Санкт-Петербург</span>
+                <span class="bilet-data">12 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">8 520 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>
+        </div>
+        
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">10:35</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 3ч 50м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">14:25</span>
+                <span class="bilet-gorod">Сочи</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">10 838 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>       
+        </div>    
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">15:55</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 4ч 10м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">00:05</span>
+                <span class="bilet-gorod">Новосибирск</span>
+                <span class="bilet-data">15 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">6 465 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>       
+        </div>
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">21:35</span>
+                <span class="bilet-gorod">Санкт-Петербург</span>
+                <span class="bilet-data">12 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 1ч 30м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">23:05</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">12 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">19 708 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button> 
+        </div>
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">20:20</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 1ч 30м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">21:50</span>
+                <span class="bilet-gorod">Казань</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">7 498 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>          
+        </div>
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">17:50</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">13 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 4ч 30м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">00:20</span>
+                <span class="bilet-gorod">Алматы</span>
+                <span class="bilet-data">14 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">14 897 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>   
+        </div>
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">16:30</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">17 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 2ч 20м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">20:50</span>
+                <span class="bilet-gorod">Екатеринбург</span>
+                <span class="bilet-data">17 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">6 279 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>
+        </div>
+    </div>
+
+
+    <div class="bilet">
+        <img src="media/images/aircrafts/921097797_0_7_600_347_600x0_80_0_0_8ccd99b3ab3b73682b1dbb1a5e4aa6e5.jpg" class="bilet-img">
+        <div class="bilet-info">
+            <div class="bilet-otkuda">
+                <span class="bilet-vremya">08:00</span>
+                <span class="bilet-gorod">Москва</span>
+                <span class="bilet-data">15 мая 2024</span>
+            </div>
+            <div class="v-puti">
+                в пути 3ч 30м
+            </div>
+            <div class="bilet-kuda">
+                <span class="bilet-vremya">11:30</span>
+                <span class="bilet-gorod">Сочи</span>
+                <span class="bilet-data">15 мая 2024</span>
+            </div>
+        </div>
+        <div class="bilet-price">
+            <span class="bilet-cena">3 770 ₽</span>
+            <button class="bron" onclick="BronBilet()">Забронировать</button>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <a href="index.html" class="company-logo">
+            <img src="media/logo.png" style="width: 170px;">
+            <b><span class="company-name">FlightPool</span></b>
+        </a>
+        <links>
+            <a href="">Home </a>
+            <a href="">Login</a>
+            <a href="">Sign up</a>
+            <a href="">Contact</a>
+            <a href="">News</a>
+            <a href="">Return</a>
+            <a href="">Feedback</a>
+        </links>
+        <span class="razrab">
+            <p>8 (800) 100-10-10 </p>
+            <p>Зотова Любовь Анатольевна</p>
+        </span>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
